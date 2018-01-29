@@ -1,11 +1,32 @@
+# requiring the environment of Ruby 2.3.x
 image: ruby:2.3
 
-pages:                      # the build job must be named pages
+# add cache to 'vendor' for speeding up builds
+cache:
+  paths: 
+    - vendor/
+
+before_script:
+  - bundle install --path vendor
+
+# add a job called 'test'
+test:
+  stage: test
   script:
-  - gem install jekyll      # we install jekyll
-  - jekyll build -d public/ # we tell jekyll to build the site for us
+    - bundle exec jekyll build -d test/
   artifacts:
     paths:
-    - public                # this is where the site will live and the Runner uploads it in GitLab
+      - test # generating site folder to be browsed or download
+  except:
+    - master # the 'test' job will affect all branches expect 'master'
+
+# the 'pages' job will deploy and build your site to the 'public' path
+pages:
+  stage: deploy
+  script:
+    - bundle exec jekyll build -d public/
+  artifacts:
+    paths:
+      - public
   only:
-  - master
+    - master # this job will affect only the 'master' branch
