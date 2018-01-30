@@ -1,7 +1,7 @@
 # Site settings
 title: Fabian Mumm
 description: '. . . Development in progress . . .'
-url: 'http://www.fabianmumm.de'
+url: 'https://www.fabianmumm.de'
 baseurl: ''
 google_analytics: 'UA-113304081-1'
 # disqus_shortname: 'your-disqus-name'
