@@ -17,8 +17,7 @@
 {% endif %}
 
 <script>
-var host = ["www.fabianmumm.de", "projects.fabianmumm.de"];
-if ((window.location.host.indexOf(host) >= 0) && (window.location.protocol != 'https:')) {
+if ((["www.fabianmumm.de", "projects.fabianmumm.de"].indexOf(window.location.host) >= 0) && (window.location.protocol != 'https:')) {
   window.location = window.location.toString().replace(/^http:/, "https:");
 }
 </script>
