@@ -17,8 +17,8 @@
 {% endif %}
 
 <script>
-var host = "www.fabianmumm.de";
-if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+// var host = "www.fabianmumm.de";
+if ((window.location.host == 'www.fabianmumm.de' || window.location.host == 'projects.fabianmumm.de') && (window.location.protocol != 'https:')) {
   window.location = window.location.toString().replace(/^http:/, "https:");
 }
 </script>
