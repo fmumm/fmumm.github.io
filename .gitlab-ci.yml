@@ -28,7 +28,7 @@ test:
 pages:
   stage: deploy
   script:
-    - bundle exec jekyll build -d public/
+    - bundle exec jekyll build  --watch --incremental --verbose -d public/
 #    - mkdir -p public/.well-known/acme-challenge/ # Add Let's Encrypt support
 #    - cp le/*  public/.well-known/acme-challenge/ # Copy Let's Encrypt support
   artifacts:
