@@ -15,3 +15,10 @@
   ga('send', 'pageview');
 </script>
 {% endif %}
+
+</script>
+var host = "www.fabianmumm.de";
+if ((host == window.location.host) && (window.location.protocol != 'https:')) {
+  window.location = window.location.toString().replace(/^http:/, "https:");
+}
+</script>
