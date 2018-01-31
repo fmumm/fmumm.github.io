@@ -67,6 +67,16 @@
               </li>
             {% endif %}
 
+            {% if site.author.gitlab_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.gitlab.com/{{ site.author.gitlab_username }}" title="{{ site.author.gitlab_username }} on GitLab" target="_blank">
+                  <i class="fa fa-gitlab" aria-hidden="true"></i>
+                  <span class="label">GitLab</span>
+                </a>
+              </li>
+            {% endif %}
+
             {% if site.author.email %}
               <!-- Email -->
               <li class="navigation__item">
