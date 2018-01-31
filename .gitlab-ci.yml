@@ -17,7 +17,7 @@ before_script:
 test:
   stage: test
   script:
-    - bundle exec jekyll build -d test/
+    - bundle exec jekyll build --watch --incremental --verbose -d test/
   artifacts:
     paths:
       - test # generating site folder to be browsed or download
