@@ -30,6 +30,12 @@ permalink: /:year/:title/
 markdown: kramdown
 highlighter: rouge
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path
+
 sass:
     sass_dir: _sass
     style: compressed
