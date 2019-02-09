@@ -1,7 +1,7 @@
 ---
 title: Projects
 layout: projects
-permalink: '/projects/'
+permalink: /projects/
 ---
 
 {% for item in site.projects %}

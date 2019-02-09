@@ -1,7 +1,6 @@
 ---
 title: Jekyll on GitLab
 layout: page
-permalink: /:collection/:name
 ---
 
 - Read about [Jekyll on GitLab](https://jekyllrb.com/docs/github-pages/)
