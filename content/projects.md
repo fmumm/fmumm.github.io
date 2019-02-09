@@ -1,6 +1,6 @@
 ---
-layout: projects
 title: Projects
+layout: projects
 permalink: '/projects/'
 ---
 
