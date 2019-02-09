@@ -34,7 +34,7 @@ highlighter: rouge
 collections:
   projects:
     output: true
-    permalink: /:collection/:path
+    permalink: /:collection/:name
 
 sass:
     sass_dir: _sass
