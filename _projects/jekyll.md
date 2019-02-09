@@ -13,6 +13,12 @@ git clone https://github.com/joshgerdes/jekyll-uno.git
 
 - Rename to `username`.gitlab.io
 - Change directory to `username`.gitlab.io
+- Install build-essential and zlib1g-dev
+
+```shell
+sudo apt-get install build-essential zlib1g-dev
+```
+
 - Install bundler and jekyll
 
 ```shell
