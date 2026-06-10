@@ -1,5 +1,5 @@
 # requiring the environment of Ruby 2.3.x
-image: ruby:2.3
+image: ruby:4.0
 
 # Set to production
 variables:
@@ -22,7 +22,7 @@ test:
     paths:
       - test # generating site folder to be browsed or download
   except:
-    - master # the 'test' job will affect all branches expect 'master'
+    - main # the 'test' job will affect all branches expect 'main'
 
 # the 'pages' job will deploy and build your site to the 'public' path
 pages:
@@ -35,4 +35,4 @@ pages:
     paths:
       - public
   only:
-    - master # this job will affect only the 'master' branch
+    - main # this job will affect only the 'main' branch
